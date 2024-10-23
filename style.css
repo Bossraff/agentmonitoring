@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Tracker Container */
+.tracker-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Heading Style */
+h1 {
+  color: #333;
+  margin: 0;
+}
+
+/* Button Group for better alignment */
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Add Button Style */
+.add-btn, .history-btn {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover, .history-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Layout for Trackers */
+.tracker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive boxes */
+  grid-gap: 20px; /* Space between boxes */
+  margin-top: 20px;
+}
+
+/* Tracker Box Style */
+.tracker {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center align text */
+}
+
+.tracker p {
+  margin: 5px 0;
+}
+
+.timer {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.red-alert {
+  color: red;
+}
+
+/* Dismiss Button Style */
+.dismiss-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dismiss-btn:hover {
+  background-color: #c82333;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px; /* Limit max width */
+}
+
+/* Close Button Style */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Clear History Button Style */
+.clear-history-btn {
+  background-color: #dc3545; /* Danger color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clear-history-btn:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}

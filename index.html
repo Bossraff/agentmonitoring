@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flywire Time Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tracker-container">
+    <h1>Flywire Time Tracker</h1>
+    <div class="button-group">
+      <button id="addTrackerBtn" class="add-btn">+ Add New Agent Tracker</button>
+      <button id="historyBtn" class="history-btn">Show History</button>
+    </div>
+  </div>
+
+  <!-- Modal for History Log -->
+  <div id="historyModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <button id="clearHistoryBtn" class="clear-history-btn">Clear History</button>
+      <h2>Dismissed Trackers History</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <div id="trackers" class="tracker-grid">
+    <!-- Agent boxes will appear here -->
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
